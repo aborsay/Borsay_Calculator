@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainFragment">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="fill"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/calculatorRegularBackground">
+<TableRow android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+
+    <Button
+        android:id="@+id/digitDelete"
+        style="@style/Widget.Button.NonNumberStyle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/calculator_button"
+        android:onClick="onDeleta"
+        android:text="@string/calculatorBackSpace"
+        android:textStyle="normal" />
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"/>
+
+    <Button
+        android:id="@+id/basicDivide"
+        style="@style/Widget.Button.NonNumberStyle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/calculator_button"
+        android:onClick="onOperation"
+        android:text="@string/calculator_divide"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="normal" />
+
+</TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/digitSeven"
+                style="@style/Widget.Button.CustomStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/calculator_number_button"
+                
+                android:text="@string/number_seven" />
+
+            <Button
+                android:id="@+id/digitEight"
+                style="@style/Widget.Button.CustomStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/calculator_number_button"
+                
+                android:text="@string/number_eight" />
+
+            <Button
+                android:id="@+id/digitNine"
+                style="@style/Widget.Button.CustomStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/calculator_number_button"
+                android:text="@string/number_nine" />
+
+            <Button
+                android:id="@+id/basicMultiply"
+                style="@style/Widget.Button.NonNumberStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/calculator_button"
+                android:onClick="onOperation"
+                android:text="@string/calculator_multiply"
+                android:textStyle="normal" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/digitFour"
+                style="@style/Widget.Button.CustomStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/calculator_number_button"
+                
+                android:text="@string/number_four" />
+
+            <Button
+                android:id="@+id/digitFive"
+                style="@style/Widget.Button.CustomStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/calculator_number_button"
+                
+                android:text="@string/number_five" />
+
+            <Button
+                android:id="@+id/digitSix"
+                style="@style/Widget.Button.CustomStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/calculator_number_button"
+                
+                android:text="@string/number_six" />
+
+            <Button
+                android:id="@+id/basicSubtract"
+                style="@style/Widget.Button.NonNumberStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/calculator_button"
+                android:onClick="onOperation"
+                android:text="@string/calculator_minus"
+                android:textStyle="normal" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/digitOne"
+                style="@style/Widget.Button.CustomStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/calculator_number_button"
+                
+                android:text="@string/number_one" />
+
+            <Button
+                android:id="@+id/digitTwo"
+                style="@style/Widget.Button.CustomStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/calculator_number_button"
+                
+                android:text="@string/number_two" />
+
+            <Button
+                android:id="@+id/digitThree"
+                style="@style/Widget.Button.CustomStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/calculator_number_button"
+                
+                android:text="@string/number_three"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/basicAdd"
+                style="@style/Widget.Button.NonNumberStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/calculator_button"
+                android:text="@string/calculator_add"
+                android:textStyle="normal" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/digitSign"
+                style="@style/Widget.Button.NonNumberStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/calculator_number_button"
+                
+                android:text="@string/calculatorNegative"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/digitZero"
+                style="@style/Widget.Button.CustomStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/calculator_number_button"
+                
+                android:text="@string/number_zero" />
+
+            <Button
+                android:id="@+id/digitDecimal"
+                style="@style/Widget.Button.NonNumberStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/calculator_number_button"
+                
+                android:text="@string/calculatorDot"
+                android:textStyle="normal" />
+
+
+            <Button
+                android:id="@+id/basicEqual"
+                style="@style/Widget.Button.NonNumberStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/calculator_button"
+                android:onClick="onOperation"
+                android:text="@string/calculatorEqual"
+                android:textStyle="normal" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

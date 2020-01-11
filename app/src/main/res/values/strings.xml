@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Borsay Calculator</string>
+
+    <string name="number_nine">9</string>
+    <string name="number_eight">8</string>
+    <string name="number_seven">7</string>
+    <string name="number_six">6</string>
+    <string name="number_five">5</string>
+    <string name="number_four">4</string>
+    <string name="number_three">3</string>
+    <string name="number_two">2</string>
+    <string name="number_one">1</string>
+    <string name="number_zero">0</string>
+    <string name="calculator_divide">÷</string>
+    <string name="calculator_multiply">X</string>
+    <string name="calculator_add">+</string>
+    <string name="calculator_minus">−</string>
+    <string name="calculatorEqual">=</string>
+    <string name="calculatorDot">.</string>
+    <string name="calculatorBackSpace">⌫</string>
+    <string name="calculatorNegative">+/-</string>
+    <string name="blankString" />
+</resources>

@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="Widget.Button.CustomStyle"
+        parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:minHeight">50dp</item>
+        <item name="android:maxWidth">300dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">32sp</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="autoSizeMinTextSize">18sp</item>
+        <item name="autoSizeMaxTextSize">56sp</item>
+        <item name="autoSizeStepGranularity">2sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#dddddd</item>
+    </style>
+
+    <style name="Widget.Button.NonNumberStyle"
+        parent="Widget.Button.CustomStyle">
+        <item name="android:textColor">#aaaaaa</item>
+    </style>
+
+
+</resources>
